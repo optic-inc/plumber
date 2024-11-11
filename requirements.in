@@ -1,0 +1,20 @@
+numpy
+pandas
+ipykernel
+matplotlib
+seaborn
+scikit-learn
+fastparquet
+pyarrow
+
+rdkit
+splito
+medchem
+datamol
+gemmi  # for biolip
+chembl-structure-pipeline
+
+pip-tools
+loguru
+tqdm
+ruff
