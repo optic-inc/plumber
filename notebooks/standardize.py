@@ -9,6 +9,7 @@ from rdkit.Chem.AllChem import MolSanitizeException
 
 RDLogger.DisableLog("rdApp.*")
 
+
 LARGEST_FRAGMENT_CHOOSER = rdMolStandardize.LargestFragmentChooser()
 
 

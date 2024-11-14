@@ -2,7 +2,7 @@
 ## Description
 PLUMBER is a benchmark for developing sequence-based models for binding affinity prediction, based on the PLINDER benchmark. The test data points include the SMILES of a small ligand, the sequence of the monomeric target protein, and a binary activity label corresponding to Ki/Kd < 1 μM. PLINDER is employed to split the proteins into training and testing sets. To enhance flexibility, the training set includes continuous values and their corresponding signs (=, >, <) and is compiled from various sources: ChEMBL, BindingDB, and BioLip2.
 
-`test.csv` contains the following columns:
+`val.csv` and `test.csv` contains the following columns:
 
 - `SMILES`: the SMILES representation of a molecule
 - `sequence`: the amino acid sequence of a monomer target protein
