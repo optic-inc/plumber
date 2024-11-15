@@ -38,3 +38,9 @@ pip install -r requirements.txt
 To add a package to the `requirements.txt` add it to `requriements.in` and run `pip-compile` to generate new `requirement.txt`.
 
 # Acknowledgements
+Many thanks to the [PLINDER](https://www.plinder.sh/) authors for the groundbreaking work on the advanced molecular data splitting.
+
+## Citation
+Durairaj, Janani, Yusuf Adeshina, Zhonglin Cao, Xuejin Zhang, Vladas Oleinikovas, Thomas Duignan, Zachary McClure, Xavier Robin, Gabriel Studer, Daniel Kovtun, Emanuele Rossi, Guoqing Zhou, Srimukh Prasad Veccham, Clemens Isert, Yuxing Peng, Prabindh Sundareson, Mehmet Akdel, Gabriele Corso, Hannes Stärk, Gerardo Tauriello, Zachary Wayne Carpenter, Michael M. Bronstein, Emine Kucukbenli, Torsten Schwede, Luca Naef. 2024. “PLINDER: The Protein-Ligand Interactions Dataset and Evaluation Resource.”
+[bioRxiv](https://doi.org/10.1101/2024.07.17.603955)
+[ICML'24 ML4LMS](https://openreview.net/forum?id=7UvbaTrNbP)
