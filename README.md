@@ -1,5 +1,6 @@
 # PLUMBER
 ## Overview
+![PLUMBER preview](assets/plumber_preview.png)
 PLUMBER is a benchmark for developing sequence-based models for binding event prediction, based on the PLINDER benchmark. PLUMBER is compiled as protein-ligand pairs dataset from various sources (ChEMBL, BindingDB, and BioLip2) and employes aggressive filtering from each of the datasets followed by molecules standardization, PAINS filtering and deduplication. The val/test sets are additionally binarized for binding event classification at a threshold of `< 1 μM` on Ki/Kd to have unified benchmark to compare models on. PLINDER is employed to split the proteins into training and testing sets. To enhance flexibility, the training set includes continuous values and their corresponding signs (=, >, <).
 
 Note: *PLUMBER* states for *Protein–Ligand Unseen Matching Benchmark for Evaluating Robustness*
@@ -7,7 +8,7 @@ Note: *PLUMBER* states for *Protein–Ligand Unseen Matching Benchmark for Evalu
 ## PLINDER
 To develop generalizable sequence/structure-based models, we aim to test our model on unseen proteins. Standard techniques, such as time-split and random split, often result in test sets containing many very similar proteins, which limits the ability to measure generalizability. The recent benchmark, [PLINDER](https://www.plinder.sh/), proposed a compound metric that accounts for different types of similarity on system level and splits datasets based on this metric. We decided to use their protein split assignment. While it is not perfect (as we lack ligand split information), it should yield more challenging splits compared to standard techniques.
 
-![EDA](eda.png)
+![EDA](assets/eda.png)
 
 
 ## Data description
