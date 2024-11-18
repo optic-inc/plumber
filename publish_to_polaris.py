@@ -57,6 +57,7 @@ zarr.convenience.consolidate_metadata(plumber_zarr)
 readme = """
 # PLUMBER
 ## Overview
+![PLUMBER preview](https://github.com/optic-inc/plumber/blob/dfc5424d065a4ba153e0074b85ba10348cddd8eb/assets/plumber_preview.png)
 PLUMBER is a benchmark for developing sequence-based models for binding event prediction, based on the PLINDER benchmark. PLUMBER is compiled as protein-ligand pairs dataset from various sources (ChEMBL, BindingDB, and BioLip2) and employes aggressive filtering from each of the datasets followed by molecules standardization, PAINS filtering and deduplication. The val/test sets are additionally binarized for binding event classification at a threshold of `< 1 μM` on Ki/Kd to have unified benchmark to compare models on. PLINDER is employed to split the proteins into training and testing sets. To enhance flexibility, the training set includes continuous values and their corresponding signs (=, >, <).
 
 Note: *PLUMBER* states for *Protein–Ligand Unseen Matching Benchmark for Evaluating Robustness*
