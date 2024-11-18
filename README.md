@@ -5,6 +5,8 @@ PLUMBER is a benchmark for developing sequence-based models for binding affinity
 ## Plinder
 To develop generalizable sequence/structure-based models, we aim to test our model on unseen proteins. Standard techniques, such as time-split and random split, often result in test sets containing many very similar proteins, which limits the ability to measure generalizability. The recent benchmark, Plinder, proposed a compound metric that accounts for different types of similarity and splits datasets based on this metric. We decided to use their protein split assignment. While it is not perfect (as we lack ligand split information), it should yield more challenging splits compared to standard techniques.
 
+![EDA](eda.png)
+
 
 ## Columns
 `val.csv` and `test.csv` contain the following columns:
