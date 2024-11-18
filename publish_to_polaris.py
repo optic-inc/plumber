@@ -57,15 +57,15 @@ zarr.convenience.consolidate_metadata(plumber_zarr)
 readme = """
 # PLUMBER
 ## Overview
-![PLUMBER preview](https://github.com/optic-inc/plumber/blob/dfc5424d065a4ba153e0074b85ba10348cddd8eb/assets/plumber_preview.png)
-PLUMBER is a benchmark for developing sequence-based models for binding event prediction, based on the PLINDER benchmark. PLUMBER is compiled as protein-ligand pairs dataset from various sources (ChEMBL, BindingDB, and BioLip2) and employes aggressive filtering from each of the datasets followed by molecules standardization, PAINS filtering and deduplication. The val/test sets are additionally binarized for binding event classification at a threshold of `< 1 μM` on Ki/Kd to have unified benchmark to compare models on. PLINDER is employed to split the proteins into training and testing sets. To enhance flexibility, the training set includes continuous values and their corresponding signs (=, >, <).
+![PLUMBER preview](https://raw.githubusercontent.com/optic-inc/plumber/faab1c9c2b7625820658ac720908f44b8fedac61/assets/plumber_preview.png)
+**PLUMBER** is a benchmark for developing sequence-based models for **binding event prediction**, based on the PLINDER benchmark. PLUMBER is compiled as protein-ligand pairs dataset from various sources (ChEMBL, BindingDB, and BioLip2) and employes aggressive filtering from each of the datasets followed by molecules standardization, PAINS filtering and deduplication. The val/test sets are additionally binarized for binding event classification at a threshold of `< 1 μM` on Ki/Kd to have unified benchmark to compare models on. PLINDER is employed to split the proteins into training and testing sets. To enhance flexibility, the training set includes continuous values and their corresponding signs (=, >, <).
 
-Note: *PLUMBER* states for *Protein–Ligand Unseen Matching Benchmark for Evaluating Robustness*
+Note: **PLUMBER** states for *Protein–Ligand Unseen Matching Benchmark for Evaluating Robustness*
 
 ## PLINDER
 To develop generalizable sequence/structure-based models, we aim to test our model on unseen proteins. Standard techniques, such as time-split and random split, often result in test sets containing many very similar proteins, which limits the ability to measure generalizability. The recent benchmark, [PLINDER](https://www.plinder.sh/), proposed a compound metric that accounts for different types of similarity on system level and splits datasets based on this metric. We decided to use their protein split assignment. While it is not perfect (as we lack ligand split information), it should yield more challenging splits compared to standard techniques.
 
-![EDA](https://github.com/optic-inc/plumber/blob/041ddb780ca9001448d5f9b373b66547443a768a/eda.png)
+![EDA](https://raw.githubusercontent.com/optic-inc/plumber/faab1c9c2b7625820658ac720908f44b8fedac61/assets/eda.png)
 
 
 ## Data description
