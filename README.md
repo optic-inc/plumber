@@ -7,6 +7,8 @@ Note: *PLUMBER* states for *Protein–Ligand Unseen Matching Benchmark for Evalu
 ## PLINDER
 To develop generalizable sequence/structure-based models, we aim to test our model on unseen proteins. Standard techniques, such as time-split and random split, often result in test sets containing many very similar proteins, which limits the ability to measure generalizability. The recent benchmark, [PLINDER](https://www.plinder.sh/), proposed a compound metric that accounts for different types of similarity on system level and splits datasets based on this metric. We decided to use their protein split assignment. While it is not perfect (as we lack ligand split information), it should yield more challenging splits compared to standard techniques.
 
+![EDA](eda.png)
+
 
 ## Data description
 `val.csv` and `test.csv` contain the following columns:
