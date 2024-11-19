@@ -69,7 +69,7 @@ To develop generalizable sequence/structure-based models, we aim to test our mod
 
 
 ## Data description
-`val.csv` and `test.csv` contain the following columns:
+`val` and `test` sets contain the following columns:
 
 - `SMILES`: standardized SMILES representation of a molecule
 - `sequence`: amino acid sequence of a monomer target protein
@@ -78,7 +78,7 @@ To develop generalizable sequence/structure-based models, we aim to test our mod
 - `split`: always set to "test"
 - `is_active`: a binary label indicating if the molecule has a Ki/Kd < 1 μM
 
-`train.csv` does not have an `is_active` column. Instead, it contains different columns useful for training. `ki`, `kd`, `ic50`, and `ec50` store activity values, while `ki_sign`, `kd_sign`, `ic50_sign`, and `ec50_sign` specify the corresponding relationship, such as =, <, or >. You can choose to use only Ki/Kd equality data, but alternative strategies can incorporate the other activity types as well.
+`train` set does not have an `is_active` column. Instead, it contains different columns useful for training. `ki`, `kd`, `ic50`, and `ec50` store activity values, while `ki_sign`, `kd_sign`, `ic50_sign`, and `ec50_sign` specify the corresponding relationship, such as =, <, or >. You can choose to use only Ki/Kd equality data, but alternative strategies can incorporate the other activity types as well.
 
 ## Preprocessing
 To ensure high data quality, we performed extensive preprocessing steps:
